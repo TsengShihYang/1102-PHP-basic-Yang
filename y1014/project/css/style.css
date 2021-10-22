@@ -1,0 +1,144 @@
+html {
+    background-color: rgb(241, 236, 210);
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 87%;
+    /*14px */
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* margin: 20px auto; */
+    background-color: white;
+    padding-left: 42px;
+    padding-right: 3em;
+    /* em 14px x 3 42px */
+}
+
+/* Header style */
+
+.header {
+    color: pink;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.header-title {
+    margin: 0;
+    font-size: normal;
+    font-size: 165%;
+}
+
+.header-slogan {
+    margin: 0;
+}
+
+/* Nav style */
+
+.nav {
+    color: purple;
+    margin-top: 10px;
+}
+/* 第一組 */
+.nav-list {
+    display:flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-item {
+    list-style-type: none;
+    margin-right: 20px;
+    /* border: solid 1px black; */
+}
+
+.nav-list-item-link{
+    text-decoration:none;
+    border: solid 1px lightgray;
+    padding: 5px 10px ;
+    color: lightslategray;
+    text-align:center;
+    margin-right: 5px;
+}
+.nav-list-item-link:hover{
+color: pink;
+}
+/* 第二組ul 第二組預設none */
+.nav-sublist{
+    display:none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    min-width: 20px;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+    list-style-type: none;
+}
+/* 第一組li被碰到 第二組ul block */
+.sub:hover .nav-sublist{
+    display:block;
+}
+.nav-sublist-item{
+    list-style-type: none;
+    border: solid 1px rgb(231, 183, 183);
+    padding: 5px;
+    background-color: rgb(243, 243, 237);
+
+}
+/* 第二組ul li a  */
+.nav-sublist-item-link{
+    text-decoration:none ;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    text-align: left;
+    /* border: 3px solid lightgray; */
+
+}
+
+
+.content-area {
+    display: flex;
+    border-top: 2px solid #e5e9dc;
+    border-bottom: 1px solid #e5e9dc;
+    padding: 7px;
+    margin-top: 5px;
+
+}
+
+/* Main-area style*/
+
+.main-area {
+    width: 60%;
+    padding-right: 40px;
+}
+
+/* Sidebar style*/
+
+.sidebar {
+    width: 40%;
+    background-color: #eeeee1;
+    padding: 20px 40px;
+    font-size: 85;
+}
+
+/* Footer style*/
+
+.footer {
+    color: grey;
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

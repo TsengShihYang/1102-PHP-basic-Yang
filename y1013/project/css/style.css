@@ -1,0 +1,84 @@
+html {
+    background-color: lightblue;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 87%;
+    /*14px */
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* margin: 20px auto; */
+    background-color: white;
+    padding-left: 42px;
+    padding-right: 3em;
+    /* em 14px x 3 42px */
+}
+
+/* Header style */
+
+.header {
+    color: pink;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.header-title {
+    margin: 0;
+    font-size: normal;
+    font-size: 165%;
+}
+
+.header-slogan {
+    margin: 0;
+}
+
+/* Nav style */
+
+.nav {
+    color: black
+}
+
+.content-area {
+    display: flex;
+    border-top: 2px solid #e5e9dc;
+    border-bottom: 1px solid #e5e9dc;
+    padding: 7px;
+}
+
+/* Main-area style*/
+
+.main-area {
+    width: 60%;
+    padding-right: 40px;
+}
+
+/* Sidebar style*/
+
+.sidebar {
+    width: 40%;
+    background-color: #eeeee1;
+    padding: 20px 40px;
+    font-size: 85;
+}
+
+/* Footer style*/
+
+.footer {
+    color: grey;
+    text-align: center;
+    font-size: 85%;
+    color: #999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
