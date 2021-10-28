@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // alert( "Hello World JS :))");
+        // console.log("hello world1 js console");
+        // console.log("hello world2 js console");
+        // console.log("hello world3 js console");
+
+        //    let name = prompt("name ?","your name");
+        //    console.log(name);
+        //    let number = prompt("number ?","your no.");
+        //    console.log(number);
+        //    let string = prompt("yourself ?","自我介紹");
+        //    console.log(name + number + string);
+
+        // let num1 = prompt("飲料金額", 0);
+        // let num2 = prompt("付款金額", 0);
+
+        // if (num1 < num2) {
+        //     resault = "恭喜,可找錢" + (num2-num1) + "元" ;
+        //     console.log(resault);
+        // } else if  (num1 > num2) {
+        //     resault2 = "錢不夠" + (num1-num2) + "元,小氣鬼";
+        //     console.log(resault2);
+        // }
+        // else
+        //    { resault3 = "錢剛剛好";
+        //     console.log(resault3);
+        // } 
+
+        //  let password = prompt("輸入密碼", 0);
+        //  let total = prompt( "存款餘額", 0);
+        //  let no1 = prompt("輸入選擇 1.轉帳 2.提款", 0);
+        //  let money = prompt("選擇提款金額", 0);
+        //      console.log("提款金額" + money);
+        //      if( money < total) {
+        //          console.log("餘額為" + (total - money))
+        //      }
+        //      else{
+        //      }
+        let key = 1234;
+        let password = prompt("輸入密碼", 0);
+        if (key == password) {
+
+            let total = parseInt(prompt("存款餘額", 0)) ;
+            let no1 = prompt("輸入選擇 1.轉帳 2.提款", 0);
+            // console.log(total);
+            // console.log(no1);
+
+            if (no1 == 2) {
+                let money = parseInt(prompt("選擇提款金額", 0)) ;
+                console.log("存款餘額" + total);
+              
+                // console.log(typeof(total));
+                // console.log("提款金額" + money);
+                // console.log(typeof(money));
+                if (total >= money) {
+                    console.log("提款金額" + money);
+                    console.log("餘額為" + (total - money));
+                }
+                else {
+                    console.log("餘額不足");
+                }
+            }
+            else {
+                console.log("目前系統只支援提款");
+            }
+        }
+        else {
+            console.log("您輸入的密碼錯誤");
+
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

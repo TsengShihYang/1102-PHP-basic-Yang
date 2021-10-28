@@ -1,0 +1,98 @@
+*{
+box-sizing: border-box;
+font-family: "標楷體";
+overflow: hidden;
+}
+
+body{
+    display: flex;
+    width: 1024px;  
+    background-color: #ffffff;  
+    padding: 0 12px;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body>*:not(aside, section),aside>* ,section>* 
+{
+    border: 1px solid lightgray;
+}
+
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+    font-size: 48px;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+}
+.menu{
+    flex-basis: calc(100% - 25px);
+    height:65px ;
+    font-size: 16px;
+}
+.menu2{
+    color:#FF00FF ;
+    font-size: 24px;
+    text-decoration:underline;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#guitar{
+    text-decoration: underline;
+}
+
+.aside>nav>a{
+    text-decoration: none;
+    color: #000000;
+    background: url(/images/menu1.png);
+    display:inline-block;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+}
+.aside>nav>a:hover{
+    background: url(/images/menu2.png);
+}
+.update{
+    flex-basis: 25px;
+    font-size: 16px;
+    color: #000;
+}
+
+.section{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis:calc(1000px - 215px);
+    height: calc(768px - 65px -25px);
+}
+.marquee{
+    flex-basis: 29px ;
+    padding: 0 calc((100% - 770px -2px) /2);
+    font-family: "標楷體";
+    font-size: 24px;
+    text-shadow: 1px 1px grey;
+    color:#0000FF;
+}
+
+.content{
+    flex-basis: calc(100% - 29px);
+    padding: 10px calc((100% - 770px -2px) /2);
+    
+}
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+    color: black;
+    text-shadow: 1px 1px grey;
+    font-size: 16px;
+}
