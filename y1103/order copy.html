@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飲料訂單</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: lightsalmon;
+        }
+        table {
+            border: 1px solid lightblue;
+            width: 80%;
+            text-align: center;
+            margin: 10px auto;
+        }
+        tr,
+        td,
+        th {
+            border: 1px solid lightgrey;
+            color: blue;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>飲料訂單</h1>
+    <form action="" id="myForm">
+    <table>
+        <tr>
+            <th>品名</th>
+            <th>單價</th>
+            <th>數量</th>
+            <th>總價</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="itemName1" id="itemName1" value="拿鐵"></td>
+            <td><input type="number" name="itemPrice1" id="itemPrice1" value="150"></td>
+            <td><input type="number" name="itemCount1" id="itemCount1" value="0"></td>
+            <td><input type="number" name="itemTotal1" id="itemTotal1" value="0"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="itemName2" id="itemName2" value="星冰樂"></td>
+            <td><input type="number" name="itemPrice2" id="itemPrice2" value="200"></td>
+            <td><input type="number" name="itemCount2" id="itemCount2" value="0"></td>
+            <td><input type="number" name="itemTotal2" id="itemTotal2" value="0"></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="itemName3" id="itemName3" value="每日咖啡"></td>
+            <td><input type="number" name="itemPrice3" id="itemPrice3" value="100"></td>
+            <td><input type="number" name="itemCount3" id="itemCount3" value="0"></td>
+            <td><input type="number" name="itemTotal3" id="itemTotal3" value="0"></td>
+        </tr>
+        </table>
+        <p>
+            <input type="submit" value="訂購成功" id="resultBtn">
+        </p>
+        
+            <p id="pResult">result :</p>
+        </form>
+        
+    <script src="./js/style2.js">
+
+    </script>
+
+</body>
+
+</html>

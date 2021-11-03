@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    font-family: "標楷體";
+    overflow: hidden;
+}
+
+body{
+    
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside{
+    display: flex;
+}

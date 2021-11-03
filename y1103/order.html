@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飲料訂單</title>
+</head>
+
+<body>
+    <h1>飲料訂單</h1>
+    <form action="" id="order">
+        <p>
+            珍珠奶茶 55元
+            <label for="num1">數量</label>
+            <input type="number" name="num1" id="num1" value="">
+            <label for="total1">總價</label>
+            <input type="number" name="total1" id="total1" value="">
+        </p>
+        <p>
+            茉香綠茶 25元
+            <label for="num2">數量</label>
+            <input type="number" name="num2" id="num2" value="">
+            <label for="total1">總價</label>
+            <input type="number" name="total2" id="total2" value="">
+        </p>
+        <p>
+            梅子綠茶 35元
+            <label for="num3">數量</label>
+            <input type="number" name="num3" id="num3" value="">
+            <label for="total3">總價</label>
+            <input type="number" name="total3" id="total3" value="">
+        </p>
+        <p>
+            <input type="submit" value="結帳" id="resault">
+    </form>
+    </p>
+    <hr>
+    <p id=Tresault>
+        所有總價 :
+    </p>
+
+    <script>
+
+        const order = document.getElementById("order");
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
+        const num3 = document.getElementById("num3");
+        const total1 = document.getElementById("total1");
+        const total2 = document.getElementById("total2");
+        const total3 = document.getElementById("total3");
+        const resault = document.getElementById("resault");
+        const Tresault = document.getElementById("Tresault");
+
+
+        form.addEventListener("submit", function (e){
+            e.preventDefault();
+
+            console.log(total1.value);
+            console.log(total2.value);
+            console.log(total3.value);
+            calResault = parseInt(total1.value) + parseInt(total2.value) + parseInt(total3.value);
+            console.log(typeof (calResault));
+            console.log(calResault);
+            Tresault.innerText = "所有的總價 :" + calResault;
+        }
+        )
+
+    </script>
+</body>
+
+</html>
