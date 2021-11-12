@@ -82,7 +82,7 @@ body>*:not(aside, section),aside>* ,section>*
     padding: 0 calc((100% - 770px -2px) /2);
     font-family: "標楷體";
     font-size: 24px;
-    text-shadow: 1px 1px grey;
+    /* text-shadow: 1px 1px grey; */
     color:#0000FF;
 }
 

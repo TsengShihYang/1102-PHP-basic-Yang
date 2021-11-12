@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    font-family: "標楷體";
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    width: 1024px;
+    height: 768px;
+    flex-wrap: wrap;
+    margin:0 auto ;
+    background-color:white ;
+    justify-content: center;
+    text-align: center;
+}
+
+body>*:not(aside,section),aside>*,section>*{
+    border: 1px solid lightgray;
+}
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    flex-basis:215px ;
+    height: calc(768px - 65px - 20px);
+}
+.menu{
+    flex-basis: calc(100% - 25px);
+    height: 65px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu2{
+    color: #FF00FF;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.aside>nav>a{
+    background: url(./素材/menu1.png);
+    width: 200px;
+    height: 35px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}

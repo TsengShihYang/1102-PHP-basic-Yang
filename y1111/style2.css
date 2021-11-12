@@ -1,0 +1,17 @@
+.display-box{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 4px;
+}
+
+.block{
+    display: block;
+}
+.inline{
+    display: inline;
+}
+
+.in-block{
+    display: inline-block;
+}

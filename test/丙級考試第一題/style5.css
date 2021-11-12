@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: "標楷體";
+    overflow: hidden;
+}
+
+body {
+    height: 768px;
+    width: 1024px;
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+body>*:not(aside,section),aside>*,section>*{
+    border: 1px solid lightgray;
+}
+
+.top{
+    flex-basis: 1000px;
+    height: 65px;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+}
+
+.menu{
+    flex-basis: calc(100% - 25px);
+    height: 65px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu2{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    color: #FF00FF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.aside>nav>a{
+    background:url(./素材/menu1.png);
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    display:inline-block;
+    width: 200px;
+    height: 35px;
+    padding: 8px;
+
+}    
+
+.aside>nav>a:hover{
+    background: url(./素材/menu2.png);
+}
+
+#guitar{
+    text-decoration: underline;
+}
+
+
+.update{
+    flex-basis: 25px;
+}
+
+.section{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 785px;
+    height: calc(768px - 65px - 20px);
+}
+
+.marquee{
+    flex-basis: 29px;
+    width: 770px;
+    font-size: 24px;
+    color: #0000FF;
+    padding: 0 calc((100% - 770px -2px) /2);
+
+}
+.content{
+    flex-basis:calc(100% - 29px);
+    padding: 10px calc((100% - 770px -2px) /2);
+
+}
+
+.footer{
+    flex-basis: 1000px;
+    height: 20px;
+    color: #000000;
+    font-size: 16px;
+
+}

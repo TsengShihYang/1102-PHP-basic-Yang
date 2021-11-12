@@ -1,0 +1,91 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(212, 231, 238);
+    text-align: center;
+    background-image: url(https://i.picsum.photos/id/1036/4608/3072.jpg?hmac=Tn9CS_V7lFSMMgAI5k1M38Mdj-YEJR9dPJCyeXNpnZc);
+    background-size:cover ;
+}
+
+.top {
+    color: red;
+    font-size: 48px;
+    text-shadow: 0 3px 3px lightblue;
+}
+.main{
+    width: 100%;
+    color: white;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+img{
+    width: 50%;
+}
+
+.n1 {
+    overflow: auto;
+    background-color: chartreuse;
+    /* border: 2px solid white; */
+    width: calc(80% / 3);
+    height: 90%;
+}
+
+.n2 {
+    background-color: rgb(240, 175, 213);
+    /* border: 2px solid white; */
+    width: calc(80% / 3);
+    height: 90%;
+    overflow: auto;
+}
+
+.n3 {
+    background-color: rgb(157, 149, 226);
+    /* border: 2px solid white; */
+    width: calc(80% / 3);
+    height: 90%;
+    overflow: auto;
+}
+
+p {
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 1.5em;
+}
+
+
+
+@media (max-width: 991px) and (min-width:577px) {
+    
+    
+    
+    .n1, .n2, .n3 {
+        width: 45%;
+        background-color: lightgrey;
+        margin: 10px 0;
+    }
+    img{ width: 60%;}
+
+}
+
+@media (max-width: 576px) {
+    
+    .main{
+height: 100vh;
+justify-content: center;
+display: flex;
+flex-direction: column;
+    }
+    
+    .n1, .n2, .n3 {
+        width: 80%;
+        background-color: rgb(245, 127, 127);
+        margin: 10px 0;
+    }
+    img{ width: 80%;}
+}
