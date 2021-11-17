@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="form-box">
+    <div class="form-header">
+        <h1 class="form-header-title" ><i class="fas fa-compact-disc"></i>員工資料卡</h1>
+    </div>
+        <form action="form-body">
+
+            <div class="form-group">
+                <label for="username"><i class="fas fa-user"></i></i></i>姓 名</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div>
+                <label for="sex"><i class="fas fa-user"></i></i></i>姓 別</label>
+                <input type="radio" name="sex" id="sex1" value="1">
+                <label for="sex1">男性</label>
+                <input type="radio" name="sex" id="sex2" value="2">
+                <label for="sex2">女性</label>
+            </div>
+            <div class="form-b">
+                <label for="birthday"><i class="fas fa-user"></i></i></i>生 日</label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+            <div class="form-group">
+                <label for="usename"><i class="far fa-building"></i>部 門</label>
+               <select style="color:blue;font-weight:300;" name="department" id="department">
+                   <option value="">前端</option>
+                   <option value="">前端</option>
+                   <option value="">後端</option>
+                   <option value="">業務</option>
+                   <option value="">行銷</option>
+               </select>
+            </div>
+            <div class="form-group">
+                <label for="skill"><i class="fas fa-marker"></i>專 長</label>
+                <input type="checkbox" name="skill" id="v1" value="html">
+                <label for="v1">html</label>
+                <input type="checkbox" name="skill" id="v2" value="css">
+                <label for="v2">css</label>
+                <input type="checkbox" name="skill" id="v3" value="js">
+                <label for="v3">js</label>
+                <input type="checkbox" name="skill" id="v4" value="php">
+                <label for="v4">php</label>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="far fa-envelope"></i> E-mail</label>
+                <input class="form-email" type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="comment"><i class="far fa-edit"></i>個人簡歷</label>
+                <textarea name="comment" id="comment" cols="30" rows="10" class="form-control" placeholder="請輸入至少50字"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-outline-primary"><i class="fas fa-plane-departure"></i> 送出資料</button>
+                <!-- <button class="submit-btn" type="sumbit"><i class="fas fa-plane-departure"></i></i> SEND</button> -->
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
