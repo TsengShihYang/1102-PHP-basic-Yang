@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Modal Example</h2>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+          Open modal
+        </button>
+      
+        <!-- The Modal -->
+        <div class="modal" id="myModal1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading 1</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="form-box">
+                <div class="form-header">
+                    <h1 class="form-header-title" ><i class="fas fa-compact-disc"></i>員工資料卡</h1>
+                </div>
+                    <form action="form-body">
+            
+                        <div class="form-group">
+                            <label for="username"><i class="fas fa-user"></i></i></i>姓 名</label>
+                            <input type="text" name="username" id="username">
+                        </div>
+                        <div>
+                            <label for="sex"><i class="fas fa-user"></i></i></i>姓 別</label>
+                            <input type="radio" name="sex" id="sex1" value="1">
+                            <label for="sex1">男性</label>
+                            <input type="radio" name="sex" id="sex2" value="2">
+                            <label for="sex2">女性</label>
+                        </div>
+                        <div class="form-b">
+                            <label for="birthday"><i class="fas fa-user"></i></i></i>生 日</label>
+                            <input type="date" name="birthday" id="birthday">
+                        </div>
+                        <div class="form-group">
+                            <label for="usename"><i class="far fa-building"></i>部 門</label>
+                           <select style="color:blue;font-weight:300;" name="department" id="department">
+                               <option value="">前端</option>
+                               <option value="">前端</option>
+                               <option value="">後端</option>
+                               <option value="">業務</option>
+                               <option value="">行銷</option>
+                           </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="skill"><i class="fas fa-marker"></i>專 長</label>
+                            <input type="checkbox" name="skill" id="v1" value="html">
+                            <label for="v1">html</label>
+                            <input type="checkbox" name="skill" id="v2" value="css">
+                            <label for="v2">css</label>
+                            <input type="checkbox" name="skill" id="v3" value="js">
+                            <label for="v3">js</label>
+                            <input type="checkbox" name="skill" id="v4" value="php">
+                            <label for="v4">php</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="far fa-envelope"></i> E-mail</label>
+                            <input class="form-email" type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment"><i class="far fa-edit"></i>個人簡歷</label>
+                            <textarea name="comment" id="comment" cols="30" rows="10" class="form-control" placeholder="請輸入至少50字"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-outline-primary"><i class="fas fa-plane-departure"></i> 送出資料</button>
+                            <!-- <button class="submit-btn" type="sumbit"><i class="fas fa-plane-departure"></i></i> SEND</button> -->
+                        </div>
+                    </form>
+            
+                </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal2">Close</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    
+    <div class="container mt-3">
+        <h2>Activate Modal with JavaScript</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-primary" id="myBtn">Open Modal</button>
+      
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading 2</h4>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body">
+               <!-- <div class="container"> -->
+                <div id="tb1" class="container tab-pane "><br>
+                    <h2>HTML Table</h2>
+    
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+                        <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                        </tr>
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                        </tr>
+                        <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Italy</td>
+                        </tr>
+                    </table>
+                </div>
+                  
+
+                <!-- </div> -->
+               </div>
+              </div>
+              
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="container">
+            <h2>Modal Example 3</h2>
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+              Open modal
+            </button>
+          
+            <!-- The Modal -->
+            <div class="modal" id="myModal3">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title ">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="container ">
+                        <div class="d-flex flex-row-reverse">
+                            <button type="button" class="btn btn-success " data-toggle="modal" data-target="#myModal4">
+                                新增
+                            </button>
+                        </div>
+                        
+                          <!-- The Modal -->
+                          <div class="modal" id="myModal4">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                              
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <!-- <h4 class="modal-title">Modal Heading</h4> -->
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                  這是新增
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
+                    <div id="tb1" class="container tab-pane "><br>
+                        <h2>會員紀錄表</h2>
+        
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>修改/刪除</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>AMY</td>
+                                <td>     
+                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal5">
+                                        修改
+                                      </button>
+                                    
+                                      <!-- The Modal -->
+                                      <div class="modal" id="myModal5">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                          
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                              <!-- <h4 class="modal-title">修改</h4> -->
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                              這是修改
+                                            </div>
+                                            
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal6">
+                                        刪除
+                                      </button>
+                                    
+                                      <!-- The Modal -->
+                                      <div class="modal" id="myModal6">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                          
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                              <!-- <h4 class="modal-title">修改</h4> -->
+                                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            </div>
+                                            
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                這是刪除
+                                            </div>
+                                            
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>BOB</td>
+                                <td> 
+                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal5">
+                                        修改
+                                      </button>
+                                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal6">
+                                        刪除
+                                      </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>CAT</td>
+                                <td> 
+                                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal5">
+                                        修改
+                                      </button>
+                                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal6">
+                                        刪除
+                                      </button>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    </div>  
+                  </div>
+                  
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            
+          </div>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+              $("#myBtn").click(function(){
+                $("#myModal2").modal();
+              });
+            });
+            </script>
+</body>
+
+</html>

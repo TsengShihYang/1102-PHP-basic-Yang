@@ -56,13 +56,13 @@ table {
       color: darkorange;
   }
   #image1{
-      background-image: url(/images/011.jpg);
+      background-image: url(./images/011.jpg);
   }
   #image2{
-    background-image: url(/images/013.jpg);
+    background-image: url(./images/013.jpg);
   }  
     #image3{
-    background-image: url(/images/04.jpg);
+    background-image: url(./images/04.jpg);
   }
 
   .line{
