@@ -4,7 +4,8 @@ const num1 = document.getElementById("cNum");
 const num2 = document.getElementById("eNum");
 const cmUnit = document.getElementById("cmUnit");
 const enUnit = document.getElementById("enUnit");
-
+const cmErr = document.getElementById("cmErr");
+const inchErr = document.getElementById("inchErr");
 
 cNum.addEventListener("change",function(e){
 
@@ -15,6 +16,9 @@ cNum.addEventListener("change",function(e){
     inch=Math.round(inch * 100) / 100 ;
     console.log(inch);
     eNum.value = inch;  
+    if(isNaN(cm)){
+        cmErr.innerText = "請輸入數字";
+    }
 }); 
 
 eNum.addEventListener("change",function(e){
@@ -25,6 +29,9 @@ eNum.addEventListener("change",function(e){
     cm=Math.round(cm * 100) / 100 ;
     console.log(cm);
     cNum.value = cm;  
+    if(isNaN(inch)){
+        inchErr.innerText = "請輸入數字";
+    }
 }); 
 
 cLeg.addEventListener("change",function(e){
