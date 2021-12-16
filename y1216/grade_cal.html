@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style2.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+</head>
+
+<body>
+
+
+    <!-- 
+        hw JS　20211209 
+        1.show bs alert / p / text
+        2.num2 > num1 交換
+     -->
+
+    <div class="container">
+        <h2 class="text-center text-primary">成績計算</h2>
+        <form action="" id="myForm">
+            <div class="form-box">
+
+                <div class="form-group">
+                    <label for="Chi">國文:</label>
+                    <input type="number" class="form-control" id="Chi" placeholder="Enter 國文分數" name="Chi" min="0"
+                        max="100">
+                </div>
+                <div class="form-group">
+                    <label for="Eng">英文:</label>
+                    <input type="number" class="form-control" id="Eng" placeholder="Enter 英文分數" name="Eng" min="0"
+                        max="100">
+                </div>
+                <div class="form-group">
+                    <label for="Mat">數學:</label>
+                    <input type="number" class="form-control" id="Mat" placeholder="Enter 數學分數" name="Mat" min="0"
+                        max="100">
+                </div>
+
+                <button type="submit" class="btn btn-primary">計算平均</button>
+                <button type="submit" class="btn btn-primary" id="resetBn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+    <div class="container">
+        <div class="form-box">
+            <div class="row">
+                <div class="col-12">
+                        <h3 class="text-primary" id="result">平均分數:</h3>
+                        <div class="col-12">
+                            <h3 class="text-secondary" id="Grade">等級:</h3>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="form-box">
+            <div class="row">
+                <div class="col-12" id="theEnd">
+                    <!-- <div class="alert alert-danger" role="alert"> -->
+                        <!-- <h3 class="text-info" ></h3> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/main2 copy.js"></script>
+
+</body>
+
+</html>
