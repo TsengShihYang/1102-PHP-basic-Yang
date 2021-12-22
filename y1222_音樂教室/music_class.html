@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音樂教室資料表</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h2{
+          text-align: center;
+          color: blue;
+        }
+        </style>
+</head>
+
+<body>
+    <h2 class="mb-4 mt-4">MUSIC CLASS 資料表 <i class="fas fa-music"></i></h2>
+
+
+    <div class="container-fluid  mt-3">
+        <!-- Trigger the modal with a button -->
+        <div class="clearfix">
+            <button type="button" class="btn btn-success btn-lg float-right mb-3" id="myBtn">新增</button>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">新增資料</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid">
+      <div class="table-responsive table-hover">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>姓名</th>
+              <th>年齡</th>
+              <th>歌唱課</th>
+              <th>吉他課</th>
+              <th>貝士課</th>
+              <th>鍵盤課</th>
+              <th>繳費紀錄</th>
+              <th>課程開始日</th>
+              <th>課程結束日</th>
+              <th>修改</th>
+              <th>刪除</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>王粒紅</td>
+              <td>17</td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with checkbox">
+                </div>
+              </td>
+              <td>
+                <div class="form-b">
+                  <label for="date"><i class="fas fa-user"></i></i></i></label>
+                  <input type="date" name="datestart" id="datestart">
+              </div>
+              </td>
+              <td>
+                <div class="form-b">
+                  <label for="date"><i class="fas fa-user"></i></i></i></label>
+                  <input type="date" name="dateend" id="dateend">
+              </div>
+              </td>
+              <td>
+                <button type="button" class="btn btn-warning btn-sm"><i class="far fa-edit"></i></button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>陶吉吉</td>
+              <td>18</td>
+              <td>
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" >
+                </div>
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with checkbox">
+                </div>
+              </td> 
+              <td>
+                <div class="form-b">
+                  <label for="date"><i class="fas fa-user"></i></i></i></label>
+                  <input type="date" name="datestart" id="datestart">
+              </div>
+              </td>
+              <td>
+                <div class="form-b">
+                  <label for="date"><i class="fas fa-user"></i></i></i></label>
+                  <input type="date" name="dateend" id="dateend">
+              </div>
+              </td>
+              <td>
+                <button type="button" class="btn btn-warning btn-sm"><i class="far fa-edit"></i></button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>周借輪</td>
+              <td>20</td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <input type="checkbox" >
+              </td>
+              <td>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <input type="checkbox" aria-label="Checkbox for following text input">
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with checkbox">
+                </div>
+              </td> 
+              <td>
+                <div class="form-b">
+                  <label for="date"><i class="fas fa-user"></i></i></i></label>
+                  <input type="date" name="datestart" id="datestart">
+              </div>
+              </td>
+              <td>
+                <div class="form-b">
+                  <label for="date"><i class="fas fa-user"></i></i></i></label>
+                  <input type="date" name="dateend" id="dateend">
+              </div>
+              </td>
+              <td>
+                <button type="button" class="btn btn-warning btn-sm"><i class="far fa-edit"></i></button>
+              </td>
+              <td>
+                <button type="button" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>  
+      </div>
+    <!-- table end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+    <!-- 上面要有js include  -->
+    <script>
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myModal").modal();
+            });
+        });
+    </script>
+    <!-- 上面要有js include end -->
+</body>
+
+</html>
