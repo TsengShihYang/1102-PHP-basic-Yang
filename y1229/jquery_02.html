@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>jQ no bootstrap</h1>
+    <p id="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita animi quam non cumque esse
+        voluptatum iure nemo sequi quia.</p>
+    <p id="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita animi quam non cumque esse
+        voluptatum iure nemo sequi quia.</p>
+    <button id="hideBtn">        hideBtn    </button>
+    <button id="showBtn">        showBtn    </button>
+    <button id="toggle">        toggleBtn    </button>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script>
+        // const content = document.getElementById("content");
+        // content.style.color="red";
+        $(document).ready(function () {
+            // $("button").click(function () {
+            //     $("#content").hide();
+
+        $("#blue").css('color', 'blue');
+        $("#red").css('color', 'red');
+
+                $("#hideBtn").click(function () {
+                    $("#blue").hide();
+                    $("#red").hide();
+                });
+                $("#showBtn").click(function () {
+                    $("#blue").show();
+                    $("#red").show();
+                });
+                $("#toggle").click(function () {
+                    $("#blue").toggle();
+                    $("#red").toggle();
+                });
+                $("p").click(function () {
+                    $(this).hide();
+
+                });
+            }); 
+    </script>
+</body>
+
+</html>
